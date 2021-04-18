@@ -1,6 +1,6 @@
 # The Cool Data Scientists
 # Heart Disease Dataset
-# Members: Sneha Jaikumar, Sarthi Patil, Graham Caron
+# Members: Sneha Jaikumar, Sarthi Patil, Graham Caron, Gloria Su
 
 install.packages("tidyverse")
 library(tidyverse)
@@ -25,6 +25,9 @@ plot(ejection_fraction~smoking, data = heartFailure)
 plot(creatinine_phosphokinase~high_blood_pressure, data = heartFailure)
 plot(creatinine_phosphokinase~DEATH_EVENT, data = heartFailure)
 plot(serum_creatinine~ejection_fraction, data = heartFailure)
+plot(creatinine_phosphokinase~anaemia, data = heartFailure)
+plot(serum_sodium~platelets, data = heartFailure)
+plot(platelets~smoking, data = heartFailure)
 
 plot(heartFailure$age, heartFailure$platelets)
 model.lm <- lm(platelets~age, data = heartFailure)
